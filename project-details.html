@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تفاصيل المشروع | شركة إبصار الإعمار للمقاولات</title>
+  <script>
+    // توجيه تلقائي للصفحة المخصصة لكل مشروع بناءً على المعرف id
+    (function() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const id = urlParams.get('id');
+      const projectPages = {
+        'proj-1': 'project-1.html',
+        '1': 'project-1.html',
+        'proj-2': 'project-2.html',
+        '2': 'project-2.html',
+        'proj-3': 'project-3.html',
+        '3': 'project-3.html',
+        'proj-4': 'project-4.html',
+        '4': 'project-4.html',
+        'proj-5': 'project-5.html',
+        '5': 'project-5.html',
+        'proj-6': 'project-6.html',
+        '6': 'project-6.html'
+      };
+
+      if (id && projectPages[id]) {
+        window.location.replace(projectPages[id]);
+      } else {
+        window.location.replace('projects.html');
+      }
+    })();
+  </script>
+</head>
+<body style="font-family: sans-serif; text-align: center; padding: 60px 20px;">
+  <h2>جاري نقلك إلى صفحة تفاصيل المشروع...</h2>
+  <p>إذا لم يتم التحويل تلقائياً، <a href="projects.html">اضغط هنا للعودة لمعرض المشاريع</a>.</p>
+</body>
+</html>

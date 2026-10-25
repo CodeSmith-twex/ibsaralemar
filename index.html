@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>شركة إبصار الإعمار للمقاولات | نبني المستقبل برؤية تتجاوز التوقعات</title>
+  <meta name="description" content="شركة إبصار الإعمار للمقاولات، حلول إنشائية متكاملة تجمع بين الجودة والإتقان والالتزام. بناء الفلل، المباني التجارية، والتشطيبات الفاخرة.">
+  <meta name="keywords" content="مقاولات, تشييد وبناء, إبصار الإعمار, بناء فلل, تشطيبات فاخرة, مقاولات عامة, إشراف هندسي">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="شركة إبصار الإعمار للمقاولات">
+  <meta property="og:description" content="نبني المستقبل برؤية تتجاوز التوقعات - حلول إنشائية متكاملة تجمع بين الجودة والإتقان والالتزام.">
+  <meta property="og:image" content="assets/images/logo.webp">
+  <meta property="og:type" content="website">
+
+  <!-- الخطوط والأيقونات -->
+  <link rel="shortcut icon" href="assets/images/logo.webp" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- 1. الشريط العلوي للمعلومات السريعة -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-info">
+        <div class="top-bar-item">
+          <i class="fas fa-phone-alt"></i>
+          <a href="tel:+966500000000" dir="ltr">+966 50 000 0000</a>
+        </div>
+        <div class="top-bar-item">
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:info@ibsaralemaar.com">info@ibsaralemaar.com</a>
+        </div>
+        <div class="top-bar-item hide-on-mobile">
+          <i class="fas fa-clock"></i>
+          <span class="company-hours">السبت - الخميس: 8:00 ص - 6:00 م</span>
+        </div>
+      </div>
+      <div class="top-bar-info hide-on-mobile">
+        <div class="top-bar-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span class="company-address">المملكة العربية السعودية</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. شريط التنقل الرئيسي الفاخر (Navbar) -->
+  <nav class="navbar" id="navbar">
+    <div class="container navbar-container">
+      <a href="index.html" class="navbar-brand">
+        <img src="assets/images/logo.webp" alt="شعار شركة إبصار الإعمار للمقاولات">
+      </a>
+
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link active">الرئيسية</a></li>
+        <li><a href="about.html" class="nav-link">من نحن</a></li>
+        <li><a href="services.html" class="nav-link">خدماتنا</a></li>
+        <li><a href="projects.html" class="nav-link">مشاريعنا</a></li>
+        <li><a href="contact.html" class="nav-link">تواصل معنا</a></li>
+      </ul>
+
+      <div class="navbar-actions">
+        <a href="javascript:void(0)" onclick="openWhatsApp('السلام عليكم ورحمة الله، أود الاستفسار عن خدمات إبصار الإعمار للمقاولات.')" class="btn btn-whatsapp btn-sm">
+          <i class="fab fa-whatsapp"></i> <span class="hide-on-mobile">تواصل عبر واتساب</span>
+        </a>
+        <a href="quote.html" class="btn btn-primary btn-sm">
+          <i class="fas fa-file-signature"></i> طلب عرض سعر
+        </a>
+        <button class="mobile-toggle" aria-label="فتح القائمة الرئيسية"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- القائمة الجانبية للشاشات الصغيرة (Mobile Drawer) -->
+  <div class="mobile-nav-backdrop"></div>
+  <div class="mobile-nav-drawer">
+    <div class="mobile-nav-header">
+      <img src="assets/images/logo.webp" alt="إبصار الإعمار" style="height: 50px;">
+      <button class="mobile-nav-close" aria-label="إغلاق القائمة"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link active">الرئيسية</a>
+      <a href="about.html" class="mobile-nav-link">من نحن</a>
+      <a href="services.html" class="mobile-nav-link">خدماتنا</a>
+      <a href="projects.html" class="mobile-nav-link">مشاريعنا</a>
+      <a href="contact.html" class="mobile-nav-link">تواصل معنا</a>
+      <a href="quote.html" class="mobile-nav-link">طلب عرض سعر</a>
+    </div>
+    <div style="margin-top: auto; display: flex; flex-direction: column; gap: 12px;">
+      <a href="javascript:void(0)" onclick="openWhatsApp('السلام عليكم، أتواصل معكم عبر القائمة السريعة للجوال.')" class="btn btn-whatsapp">
+        <i class="fab fa-whatsapp"></i> محادثة واتساب
+      </a>
+      <a href="quote.html" class="btn btn-primary">
+        <i class="fas fa-calculator"></i> حاسبة وعرض سعر
+      </a>
+    </div>
+  </div>
+
+  <!-- 3. قسم الـ Hero الفاخر -->
+  <header class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-pattern"></div>
+    <div class="container">
+      <div class="hero-content reveal">
+        <div class="hero-badge">
+          <i class="fas fa-gem"></i> إبصار الإعمار للمقاولات | جودة تبني الثقة
+        </div>
+        <h1 class="hero-title">نبني المستقبل <span>برؤية تتجاوز</span> التوقعات</h1>
+        <p class="hero-description">إبصار الإعمار للمقاولات، حلول إنشائية متكاملة تجمع بين الجودة والإتقان والالتزام بالمعايير العالمية لتشييد مشاريع مستدامة وفاخرة تلبي تطلعات عملائنا.</p>
+        
+        <div class="hero-btns">
+          <a href="projects.html" class="btn btn-primary btn-lg">
+            <i class="fas fa-layer-group"></i> اكتشف مشاريعنا
+          </a>
+          <a href="quote.html" class="btn btn-outline-white btn-lg">
+            <i class="fas fa-calculator"></i> اطلب عرض سعر
+          </a>
+        </div>
+
+        <div class="hero-features">
+          <div class="hero-feature-item">
+            <div class="hero-feature-icon"><i class="fas fa-hard-hat"></i></div>
+            <div class="hero-feature-text">
+              <h4>إشراف هندسي معتمد</h4>
+              <p>كوادر هندسية تطبق أعلى معايير الكود السعودي</p>
+            </div>
+          </div>
+          <div class="hero-feature-item">
+            <div class="hero-feature-icon"><i class="fas fa-calendar-check"></i></div>
+            <div class="hero-feature-text">
+              <h4>التزام بالمواعيد</h4>
+              <p>جداول زمنية دقيقة وإنجاز مرحلي منتظم</p>
+            </div>
+          </div>
+          <div class="hero-feature-item">
+            <div class="hero-feature-icon"><i class="fas fa-shield-alt"></i></div>
+            <div class="hero-feature-text">
+              <h4>ضمانات شاملة موثقة</h4>
+              <p>عقود رسمية وضمان على الأعمال الإنشائية</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 4. قسم نبذة عن الشركة (About Preview) -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="grid-2">
+        <div class="reveal">
+          <span class="section-badge"><i class="fas fa-building"></i> نبذة عنا</span>
+          <h2 class="section-title">شريكك الموثوق في عالم <span>البناء والتشييد</span></h2>
+          <p class="text-muted" style="margin-bottom: 20px; font-size: 1.05rem;">تعد <strong>شركة إبصار الإعمار للمقاولات</strong> صرحاً إنشائياً متخصصاً في تقديم خدمات المقاولات المتكاملة، بدءاً من التخطيط الهندسي وتجهيز المخططات وصولاً إلى التنفيذ الدقيق وتسليم المفتاح بأعلى مستويات الحرفية والجودة.</p>
+          <p class="text-muted" style="margin-bottom: 25px;">نرتكز في رؤيتنا على الابتكار الهندسي، واستخدام أحدث التقنيات ومواد البناء المعتمدة، مع المحافظة على معايير السلامة المهنية ومتابعة دقيقة لكل تفاصيل المشروع عبر تقارير هندسية دورية.</p>
+
+          <div class="about-content-list">
+            <div class="about-list-item">
+              <i class="fas fa-check-circle"></i>
+              <div>
+                <h4>التزام صارم بالجدول الزمني والميزانية</h4>
+                <p>إدارة مشاريع احترافية تضمن تسليم العمل في وقته المحدد دون مفاجآت في التكاليف.</p>
+              </div>
+            </div>
+            <div class="about-list-item">
+              <i class="fas fa-check-circle"></i>
+              <div>
+                <h4>أعلى معايير الجودة ومطابقة الكود السعودي</h4>
+                <p>تطبيق فحص مخبري للمواد والخرسانات لضمان سلامة الهيكل الإنشائي لعقود طويلة.</p>
+              </div>
+            </div>
+            <div class="about-list-item">
+              <i class="fas fa-check-circle"></i>
+              <div>
+                <h4>شفافية تامة وتقارير ميدانية دورية</h4>
+                <p>متابعة مستمرة ومباشرة تضع العميل في قلب تطورات مشروعه خطوة بخطوة.</p>
+              </div>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+            <a href="about.html" class="btn btn-dark-teal">
+              <i class="fas fa-info-circle"></i> تعرف على الشركة ورؤيتنا
+            </a>
+            <a href="javascript:void(0)" onclick="openWhatsApp('السلام عليكم، أود التنسيق لجلسة استشارة هندسية أولية مع مهندسي إبصار الإعمار.')" class="btn btn-outline">
+              <i class="fab fa-whatsapp"></i> استشارة هندسية فورية
+            </a>
+          </div>
+        </div>
+
+        <div class="about-preview-image reveal reveal-delay-1">
+          <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=900&q=80" alt="صورة معمارية لمشروع حديث" class="about-main-img">
+          <div class="about-experience-card">
+            <div class="about-exp-number">15+</div>
+            <div class="about-exp-text">
+              عاماً من الخبرة الهندسية<br>
+              <span style="color: var(--secondary); font-size: 0.85rem;">في قطاع التشييد والمقاولات</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. قسم خدماتنا المميزة (Services Preview) -->
+  <section class="section-padding bg-light">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-badge"><i class="fas fa-cogs"></i> تخصصاتنا</span>
+        <h2 class="section-title">حلول متكاملة في <span>مجال المقاولات</span></h2>
+        <p class="section-description">نقدم منظومة شاملة من الخدمات الإنشائية والهندسية المصممة بعناية لتلبية متطلبات مختلف القطاعات السكنية والتجارية والصناعية.</p>
+      </div>
+
+      <div class="grid-3">
+        <!-- الخدمة 1 -->
+        <div class="service-card reveal">
+          <div class="service-icon-wrapper"><i class="fas fa-city"></i></div>
+          <h3 class="service-title">الإنشاءات العامة والمباني</h3>
+          <p class="service-desc">تشييد المباني التجارية والسكنية والهياكل الخرسانية المسلحة والمعدنية بأعلى معايير المتانة والسلامة الإنشائية.</p>
+          <ul class="service-features-list">
+            <li><i class="fas fa-check"></i> تنفيذ الهياكل الإنشائية والعظم</li>
+            <li><i class="fas fa-check"></i> إنشاء المجمعات والمراكز التجارية</li>
+            <li><i class="fas fa-check"></i> اختبارات الخرسانة وضبط الجودة</li>
+          </ul>
+          <a href="javascript:void(0)" onclick="requestServiceWhatsApp('الإنشاءات العامة والمباني')" class="service-action-link">
+            اطلب الخدمة عبر واتساب <i class="fas fa-arrow-left"></i>
+          </a>
+        </div>
+
+        <!-- الخدمة 2 -->
+        <div class="service-card reveal reveal-delay-1">
+          <div class="service-icon-wrapper"><i class="fas fa-home"></i></div>
+          <h3 class="service-title">بناء الفلل والقصور السكنية</h3>
+          <p class="service-desc">تنفيذ وتشييد الفلل المودرن والكلاسيكية من مرحلة المخطط والتأسيس وحتى تسليم المفتاح بكفاءة متناهية ولمسات فاخرة.</p>
+          <ul class="service-features-list">
+            <li><i class="fas fa-check"></i> بناء الفلل الخاصة بمواصفات حصرية</li>
+            <li><i class="fas fa-check"></i> عزل مائي وحراري متطور</li>
+            <li><i class="fas fa-check"></i> تصميم وتنفيذ المداخل والأسوار الفخمة</li>
+          </ul>
+          <a href="javascript:void(0)" onclick="requestServiceWhatsApp('بناء الفلل والقصور السكنية')" class="service-action-link">
+            اطلب الخدمة عبر واتساب <i class="fas fa-arrow-left"></i>
+          </a>
+        </div>
+
+        <!-- الخدمة 3 -->
+        <div class="service-card reveal reveal-delay-2">
+          <div class="service-icon-wrapper"><i class="fas fa-paint-roller"></i></div>
+          <h3 class="service-title">أعمال التشطيب والديكور الفاخر</h3>
+          <p class="service-desc">تشطيبات داخلية وخارجية بأرقى المواد من رخام وأرضيات وأسقف ديكورية ودهانات حديثة تواكب أحدث التصاميم المعمارية.</p>
+          <ul class="service-features-list">
+            <li><i class="fas fa-check"></i> تركيب الواجهات والرخام الطبيعي</li>
+            <li><i class="fas fa-check"></i> أعمال الجبس والإنارة الذكية</li>
+            <li><i class="fas fa-check"></i> تجهيز المقرات الإدارية والمعارض</li>
+          </ul>
+          <a href="javascript:void(0)" onclick="requestServiceWhatsApp('أعمال التشطيب والديكور الفاخر')" class="service-action-link">
+            اطلب الخدمة عبر واتساب <i class="fas fa-arrow-left"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="text-center" style="margin-top: 50px;">
+        <a href="services.html" class="btn btn-dark-teal btn-lg">
+          <i class="fas fa-th-large"></i> استعرض كافة خدماتنا وتفاصيلها
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. قسم المشاريع المميزة (Featured Projects) -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-badge"><i class="fas fa-award"></i> سجل إنجازاتنا</span>
+        <h2 class="section-title">نماذج من <span>أعمالنا ومشاريعنا</span></h2>
+        <p class="section-description">لقطات معمارية تجسد الجودة والدقة الهندسية التي نلتزم بتقديمها في كل مشروع نشرف عليه.</p>
+      </div>
+
+      <!-- تنويه احترافي للمحتوى التجريبي -->
+      <div class="demo-notice-banner reveal">
+        <i class="fas fa-info-circle"></i>
+        <p><strong>تنويه:</strong> المشاريع والبيانات المعروضة أدناه هي نماذج استعراضية تجريبية توضح دقة وجودة التنفيذ وإمكانيات الشركة الإنشائية، وسيتم استبدالها تلقائياً بأرشيف الشركة الرسمي عند تزويدنا به.</p>
+      </div>
+
+      <div class="grid-3">
+        <!-- مشروع 1 -->
+        <div class="project-card reveal">
+          <div class="project-image-box">
+            <a href="project-1.html">
+              <img src="assets/images/فلل.jpg" alt="مجمع الفلل السكنية الفاخرة">
+            </a>
+            <span class="project-category-badge">سكني</span>
+          </div>
+          <div class="project-info-body">
+            <h3 class="project-title"><a href="project-1.html">مجمع الفلل السكنية الفاخرة</a></h3>
+            <p class="project-desc">بناء وتشييد مجموعة فلل مودرن متكاملة من مرحلة العظم وحتى التشطيب الفاخر وفق الطراز المعماري الحديث.</p>
+            <div class="project-meta-grid">
+              <div class="project-meta-item"><i class="fas fa-vector-square"></i> 3,200 م²</div>
+              <div class="project-meta-item"><i class="fas fa-map-marker-alt"></i> الرياض</div>
+              <div class="project-meta-item"><i class="fas fa-clock"></i> 14 شهر</div>
+            </div>
+            <div class="project-card-footer">
+              <a href="project-1.html" class="btn btn-outline btn-sm">
+                <i class="fas fa-eye"></i> تفاصيل المشروع
+              </a>
+              <button class="btn btn-whatsapp btn-sm" onclick="requestProjectWhatsApp('مجمع الفلل السكنية الفاخرة')">
+                <i class="fab fa-whatsapp"></i> طلب مماثل
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- مشروع 2 -->
+        <div class="project-card reveal reveal-delay-1">
+          <div class="project-image-box">
+            <a href="project-2.html">
+              <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" alt="برج الأعمال والمكاتب التجارية">
+            </a>
+            <span class="project-category-badge">تجاري</span>
+          </div>
+          <div class="project-info-body">
+            <h3 class="project-title"><a href="project-2.html">برج الأعمال والمكاتب التجارية</a></h3>
+            <p class="project-desc">تشييد صرح تجاري مكتبي متعدد الأدوار مع تركيب واجهات زجاجية مزدوجة وأنظمة ذكية عازلة للصوت والحرارة.</p>
+            <div class="project-meta-grid">
+              <div class="project-meta-item"><i class="fas fa-vector-square"></i> 6,500 م²</div>
+              <div class="project-meta-item"><i class="fas fa-map-marker-alt"></i> جدة</div>
+              <div class="project-meta-item"><i class="fas fa-clock"></i> 18 شهر</div>
+            </div>
+            <div class="project-card-footer">
+              <a href="project-2.html" class="btn btn-outline btn-sm">
+                <i class="fas fa-eye"></i> تفاصيل المشروع
+              </a>
+              <button class="btn btn-whatsapp btn-sm" onclick="requestProjectWhatsApp('برج الأعمال والمكاتب التجارية')">
+                <i class="fab fa-whatsapp"></i> طلب مماثل
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- مشروع 3 -->
+        <div class="project-card reveal reveal-delay-2">
+          <div class="project-image-box">
+            <a href="project-3.html">
+              <img src="assets/images/تشطيب.jpg" alt="قصر المعذر وتشطيبات الديكور">
+            </a>
+            <span class="project-category-badge">تشطيبات</span>
+          </div>
+          <div class="project-info-body">
+            <h3 class="project-title"><a href="project-3.html">قصر المعذر وتشطيبات الديكور</a></h3>
+            <p class="project-desc">تنفيذ أعمال الديكور والتشطيب الداخلي الفاخر بالأرضيات الرخامية والأسقف الجبسية والإنارة الهندسية المخصصة.</p>
+            <div class="project-meta-grid">
+              <div class="project-meta-item"><i class="fas fa-vector-square"></i> 1,850 م²</div>
+              <div class="project-meta-item"><i class="fas fa-map-marker-alt"></i> الرياض</div>
+              <div class="project-meta-item"><i class="fas fa-clock"></i> 8 أشهر</div>
+            </div>
+            <div class="project-card-footer">
+              <a href="project-3.html" class="btn btn-outline btn-sm">
+                <i class="fas fa-eye"></i> تفاصيل المشروع
+              </a>
+              <button class="btn btn-whatsapp btn-sm" onclick="requestProjectWhatsApp('قصر المعذر وتشطيبات الديكور')">
+                <i class="fab fa-whatsapp"></i> طلب مماثل
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center" style="margin-top: 45px;">
+        <a href="projects.html" class="btn btn-primary btn-lg">
+          <i class="fas fa-images"></i> عرض كافة المشاريع ومعرض الصور
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. قسم الإحصائيات والأرقام (Counters) -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="grid-4">
+        <div class="stat-item reveal">
+          <div class="stat-icon"><i class="fas fa-building"></i></div>
+          <div class="stat-number" data-target="120">0<span>+</span></div>
+          <div class="stat-label">مشروع منجز ومسلّم</div>
+        </div>
+        <div class="stat-item reveal reveal-delay-1">
+          <div class="stat-icon"><i class="fas fa-history"></i></div>
+          <div class="stat-number" data-target="15">0<span>+</span></div>
+          <div class="stat-label">سنوات الخبرة المتراكمة</div>
+        </div>
+        <div class="stat-item reveal reveal-delay-2">
+          <div class="stat-icon"><i class="fas fa-users"></i></div>
+          <div class="stat-number" data-target="98">0<span>%</span></div>
+          <div class="stat-label">نسبة رضا وثقة العملاء</div>
+        </div>
+        <div class="stat-item reveal reveal-delay-3">
+          <div class="stat-icon"><i class="fas fa-user-tie"></i></div>
+          <div class="stat-number" data-target="85">0<span>+</span></div>
+          <div class="stat-label">مهندس وفني متخصص</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. قسم لماذا تختار إبصار الإعمار (Why Choose Us) -->
+  <section class="section-padding bg-light">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-badge"><i class="fas fa-star"></i> التميز الهندسي</span>
+        <h2 class="section-title">لماذا تختار <span>إبصار الإعمار؟</span></h2>
+        <p class="section-description">نضع ثقتكم في صميم أولوياتنا، ونحرص على تقديم تجربة بناء سلسة وموثوقة تتفوق على المعايير التقليدية.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="why-card reveal">
+          <div class="why-icon"><i class="fas fa-drafting-compass"></i></div>
+          <h3 class="why-title">دقة هندسية ورقابة صارمة</h3>
+          <p class="why-desc">متابعة يومية في موقع المشروع واختبارات معملية دورية للخرسانات والحديد لضمان صلابة المنشأة.</p>
+        </div>
+
+        <div class="why-card reveal reveal-delay-1">
+          <div class="why-icon"><i class="fas fa-stopwatch"></i></div>
+          <h3 class="why-title">التزام تام بالجدول الزمني</h3>
+          <p class="why-desc">تخطيط زمني متقن لكل مرحلة مع اعتماد مسارات حرجة لتفادي أي تأخير في موعد التسليم المتفق عليه.</p>
+        </div>
+
+        <div class="why-card reveal reveal-delay-2">
+          <div class="why-icon"><i class="fas fa-receipt"></i></div>
+          <h3 class="why-title">شفافية تامة في التسعير</h3>
+          <p class="why-desc">جداول كميات مفصلة وعقود واضحة البنود، دون أي تكاليف مستترة أو أعباء مالية غير محسوبة.</p>
+        </div>
+
+        <div class="why-card reveal">
+          <div class="why-icon"><i class="fas fa-shield-alt"></i></div>
+          <h3 class="why-title">ضمانات شاملة لما بعد التسليم</h3>
+          <p class="why-desc">شهادات ضمان معتمدة على الهيكل الإنشائي وأعمال العزل والسباكة والكهرباء لراحة بالكم الدائمة.</p>
+        </div>
+
+        <div class="why-card reveal reveal-delay-1">
+          <div class="why-icon"><i class="fas fa-user-shield"></i></div>
+          <h3 class="why-title">السلامة المهنية أولاً</h3>
+          <p class="why-desc">تطبيق بروتوكولات الأمان الشاملة لحماية العاملين والموقع وتفادي أي مخاطر أثناء التنفيذ.</p>
+        </div>
+
+        <div class="why-card reveal reveal-delay-2">
+          <div class="why-icon"><i class="fas fa-headset"></i></div>
+          <h3 class="why-title">تواصل مباشر ودعم مستمر</h3>
+          <p class="why-desc">مهندس مشروع مخصص للتواصل المباشر مع العميل وإطلاعه على كل المستجدات أولاً بأول.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. قسم مراحل تنفيذ المشروع (Project Execution Roadmap) -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-badge"><i class="fas fa-route"></i> منهجية العمل</span>
+        <h2 class="section-title">مراحل تنفيذ <span>المشروع معنا</span></h2>
+        <p class="section-description">خطوات علمية مدروسة نتبعها من أول اتصال وحتى تسليم مفاتيح منشأتكم بكل سلاسة واحترافية.</p>
+      </div>
+
+      <div class="steps-container reveal">
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <h3 class="step-title">دراسة المخططات</h3>
+          <p class="step-desc">فحص المخططات الإنشائية والمعمارية وحساب الكميات وإعداد عرض السعر التقديري.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <h3 class="step-title">التعاقد والجدولة</h3>
+          <p class="step-desc">توقيع العقد الرسمي المعتمد واعتماد الجدول الزمني المفصل ومراحل الدفعات.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <h3 class="step-title">التأسيس والعظم</h3>
+          <p class="step-desc">أعمال الحفر والإحلال وصب القواعد وتشييد الهيكل الإنشائي الخرساني بإشراف هندسي دقيق.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">4</div>
+          <h3 class="step-title">التشطيبات والأنظمة</h3>
+          <p class="step-desc">تنفيذ التمديدات الكهروميكانيكية، أعمال العزل، تكسيات الرخام والديكورات الداخلية.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-number">5</div>
+          <h3 class="step-title">الفحص والتسليم</h3>
+          <p class="step-desc">إجراء الاختبارات الشاملة، إصدار شهادات الضمان، وتسليم المشروع للعميل جاهزاً للسكن أو التشغيل.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. قسم آراء العملاء (Testimonials) -->
+  <section class="section-padding bg-light">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-badge"><i class="fas fa-comments"></i> شهادات نعتز بها</span>
+        <h2 class="section-title">ماذا يقول <span>عملاؤنا عنّا؟</span></h2>
+        <p class="section-description">نماذج من انطباعات وتجارب العملاء الذين شاركونا رحلة البناء والتشييد.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">"تعاملت مع شركة إبصار الإعمار في بناء فيلا خاصة بالرياض، وكان الالتزام بالجدول الزمني والجودة فوق الممتاز. المهندس المشرف كان متواصلاً معي بشكل أسبوعي بتقارير مصورة واضحة."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar"><i class="fas fa-user"></i></div>
+            <div class="author-info">
+              <h4>أبو عبد العزيز الراجحي</h4>
+              <p>مالك فيلا سكنية - حي النرجس</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal reveal-delay-1">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">"تميز الفريق بالاحترافية العالية في تنفيذ مبنى تجاري، خصوصاً في أعمال الواجهات الزجاجية وشبكات السلامة ومطابقة اشتراطات الكود السعودي. دقة في الحسابات وشفافية في كل ريال."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar"><i class="fas fa-user"></i></div>
+            <div class="author-info">
+              <h4>م. فهد القحطاني</h4>
+              <p>مدير تطوير عقاري - شركة استثمارية</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal reveal-delay-2">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">"أعمال التشطيب والديكور كانت مذهلة ومتقنة للغاية. الرخام والجبس والإضاءة نُفذت بدقة تماثل المخطط ثلاثي الأبعاد بنسبة 100%. أنصح بشدة بالتعامل معهم لكل من يبحث عن الفخامة."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar"><i class="fas fa-user"></i></div>
+            <div class="author-info">
+              <h4>أحمد بن سلطان</h4>
+              <p>مشروع تشطيب قصر خاص</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. قسم الدعوة لاتخاذ إجراء (CTA Banner) -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="cta-banner reveal">
+        <div class="cta-banner-content">
+          <span class="section-badge" style="background: rgba(255,255,255,0.15); color: var(--secondary);"><i class="fas fa-bolt"></i> انطلق في مشروعك الآن</span>
+          <h2>جاهز لبدء مشروعك القادم بأعلى معايير الإتقان؟</h2>
+          <p>تواصل مع فريقنا الهندسي اليوم للحصول على دراسة مبدئية، استشارة تخصصية مجانية، وعرض سعر تفصيلي يناسب أهدافك وتطلعاتك.</p>
+          
+          <div class="cta-buttons-group">
+            <a href="quote.html" class="btn btn-primary btn-lg">
+              <i class="fas fa-file-invoice-dollar"></i> ابدأ طلب عرض السعر الآن
+            </a>
+            <a href="javascript:void(0)" onclick="openWhatsApp('السلام عليكم ورحمة الله، أود التحدث مع استشاري إبصار الإعمار لمناقشة مشروع جديد.')" class="btn btn-whatsapp btn-lg">
+              <i class="fab fa-whatsapp"></i> تواصل فوري عبر واتساب
+            </a>
+            <a href="tel:+966500000000" class="btn btn-outline-white btn-lg">
+              <i class="fas fa-phone-alt"></i> اتصل بنا هاتفياً
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. تذييل الصفحة الفاخر (Footer) -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <!-- عمود 1: النبذة والشعار -->
+        <div>
+          <a href="index.html" class="footer-logo">
+            <img src="assets/images/logo.webp" alt="إبصار الإعمار للمقاولات">
+          </a>
+          <p class="footer-about-text">شركة إبصار الإعمار للمقاولات، حلول إنشائية متكاملة تجمع بين الجودة والإتقان والالتزام. نسخر خبراتنا الهندسية لبناء مشاريع تلهم الحاضر وتبني المستقبل في المملكة العربية السعودية.</p>
+          <div class="footer-social-links">
+            <a href="javascript:void(0)" class="social-icon" aria-label="تويتر"><i class="fab fa-twitter"></i></a>
+            <a href="javascript:void(0)" class="social-icon" aria-label="لينكدإن"><i class="fab fa-linkedin-in"></i></a>
+            <a href="javascript:void(0)" class="social-icon" aria-label="انستغرام"><i class="fab fa-instagram"></i></a>
+            <a href="javascript:void(0)" onclick="openWhatsApp('السلام عليكم')" class="social-icon" aria-label="واتساب"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <!-- عمود 2: روابط سريعة -->
+        <div>
+          <h4 class="footer-heading">روابط الموقع</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html"><i class="fas fa-angle-left"></i> الرئيسية</a></li>
+            <li><a href="about.html"><i class="fas fa-angle-left"></i> من نحن</a></li>
+            <li><a href="services.html"><i class="fas fa-angle-left"></i> خدماتنا</a></li>
+            <li><a href="projects.html"><i class="fas fa-angle-left"></i> مشاريعنا</a></li>
+            <li><a href="quote.html"><i class="fas fa-angle-left"></i> طلب عرض سعر</a></li>
+            <li><a href="contact.html"><i class="fas fa-angle-left"></i> تواصل معنا</a></li>
+          </ul>
+        </div>
+
+        <!-- عمود 3: الخدمات -->
+        <div>
+          <h4 class="footer-heading">خدماتنا الإنشائية</h4>
+          <ul class="footer-links-list">
+            <li><a href="services.html"><i class="fas fa-angle-left"></i> الإنشاءات العامة</a></li>
+            <li><a href="services.html"><i class="fas fa-angle-left"></i> بناء الفلل والقصور</a></li>
+            <li><a href="services.html"><i class="fas fa-angle-left"></i> أعمال التشطيب والديكور</a></li>
+            <li><a href="services.html"><i class="fas fa-angle-left"></i> الترميم والصيانة الإنشائية</a></li>
+            <li><a href="services.html"><i class="fas fa-angle-left"></i> إدارة المشاريع والإشراف</a></li>
+            <li><a href="services.html"><i class="fas fa-angle-left"></i> الأعمال الكهروميكانيكية</a></li>
+          </ul>
+        </div>
+
+        <!-- عمود 4: بيانات الاتصال -->
+        <div>
+          <h4 class="footer-heading">بيانات التواصل</h4>
+          <div class="footer-contact-info">
+            <div class="footer-contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h5>المقر الرئيسي</h5>
+                <p>المملكة العربية السعودية</p>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fas fa-phone-alt"></i>
+              <div>
+                <h5>الهاتف المباشر</h5>
+                <a href="tel:+966500000000" dir="ltr">+966 50 000 0000</a>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fab fa-whatsapp"></i>
+              <div>
+                <h5>الواتساب المباشر</h5>
+                <a href="javascript:void(0)" onclick="openWhatsApp('السلام عليكم ورحمة الله')" dir="ltr">+966 50 000 0000</a>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h5>البريد الإلكتروني</h5>
+                <a href="mailto:info@ibsaralemaar.com">info@ibsaralemaar.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>جميع الحقوق محفوظة &copy; 2026 شركة إبصار الإعمار للمقاولات.</p>
+        <a class="asserai" target="_blank" href="https://asserai.com/">Developed by asser ai</a>   
+      </div>
+    </div>
+  </footer>
+
+  <!-- النافذة المنبثقة لتفاصيل المشروع (Modal) -->
+  <div class="modal-overlay" id="projectModal">
+    <div class="modal-box">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="إغلاق النافذة"><i class="fas fa-times"></i></button>
+      <img src="" alt="" class="modal-image" id="modalImg">
+      <div class="modal-content-inner">
+        <span class="project-category-badge" id="modalCategory" style="position: static; display: inline-block; margin-bottom: 10px;"></span>
+        <h3 class="modal-title" id="modalTitle"></h3>
+        <p class="text-muted" id="modalDesc" style="line-height: 1.8; margin-bottom: 20px;"></p>
+        
+        <div class="modal-specs-list">
+          <div class="modal-spec-item">
+            <strong>المساحة الإجمالية:</strong>
+            <span id="modalArea"></span>
+          </div>
+          <div class="modal-spec-item">
+            <strong>المدينة / الموقع:</strong>
+            <span id="modalCity"></span>
+          </div>
+          <div class="modal-spec-item">
+            <strong>مدة التنفيذ:</strong>
+            <span id="modalDuration"></span>
+          </div>
+        </div>
+
+        <h4 style="font-size: 1.15rem; font-weight: 800; color: var(--primary); margin: 20px 0 12px;">نطاق الأعمال المنفذة:</h4>
+        <ul id="modalScope" style="margin-bottom: 25px; display: flex; flex-direction: column; gap: 8px;"></ul>
+
+        <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+          <button class="btn btn-whatsapp" id="modalWhatsAppBtn">
+            <i class="fab fa-whatsapp"></i> طلب تنفيذ مشروع مماثل
+          </button>
+          <a href="quote.html" class="btn btn-primary">
+            <i class="fas fa-calculator"></i> حاسبة عرض السعر
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- زر الواتساب العائم في كافة الصفحات -->
+  <a href="javascript:void(0)" class="whatsapp-float-btn" aria-label="تواصل عبر واتساب">
+    <i class="fab fa-whatsapp"></i>
+    <span class="whatsapp-tooltip">تحدث معنا عبر واتساب</span>
+  </a>
+
+  <!-- ملفات الإعدادات والبرمجة التفاعلية -->
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

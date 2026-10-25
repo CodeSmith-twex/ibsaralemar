@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مشاريعنا | شركة إبصار الإعمار للمقاولات</title>
+  <meta name="description" content="معرض أعمال ومشاريع شركة إبصار الإعمار للمقاولات: فلل سكنية فاخرة، أبراج تجارية، أعمال العظم، والتشطيبات والديكور الحديث.">
+  
+  <link rel="shortcut icon" href="assets/images/logo.webp" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- الشريط العلوي -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-info">
+        <div class="top-bar-item">
+          <i class="fas fa-phone-alt"></i>
+          <a href="tel:+966500000000" dir="ltr">+966 50 000 0000</a>
+        </div>
+        <div class="top-bar-item">
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:info@ibsaralemaar.com">info@ibsaralemaar.com</a>
+        </div>
+        <div class="top-bar-item hide-on-mobile">
+          <i class="fas fa-clock"></i>
+          <span class="company-hours">السبت - الخميس: 8:00 ص - 6:00 م</span>
+        </div>
+      </div>
+      <div class="top-bar-info hide-on-mobile">
+        <div class="top-bar-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span class="company-address">المملكة العربية السعودية</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- شريط التنقل (Navbar) -->
+  <nav class="navbar">
+    <div class="container navbar-container">
+      <a href="index.html" class="navbar-brand">
+        <img src="assets/images/logo.webp" alt="شركة إبصار الإعمار للمقاولات">
+      </a>
+
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">الرئيسية</a></li>
+        <li><a href="about.html" class="nav-link">من نحن</a></li>
+        <li><a href="services.html" class="nav-link">خدماتنا</a></li>
+        <li><a href="projects.html" class="nav-link active">مشاريعنا</a></li>
+        <li><a href="contact.html" class="nav-link">تواصل معنا</a></li>
+      </ul>
+
+      <div class="navbar-actions">
+        <a href="javascript:void(0)" onclick="openWhatsApp('السلام عليكم ورحمة الله، أود الاستفسار عن مشاريعكم وإمكانية تنفيذ مشروع مماثل.')" class="btn btn-whatsapp btn-sm">
+          <i class="fab fa-whatsapp"></i> <span class="hide-on-mobile">تواصل عبر واتساب</span>
+        </a>
+        <a href="quote.html" class="btn btn-primary btn-sm">
+          <i class="fas fa-file-signature"></i> طلب عرض سعر
+        </a>
+        <button class="mobile-toggle" aria-label="فتح القائمة"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- القائمة الجانبية للموبايل -->
+  <div class="mobile-nav-backdrop"></div>
+  <div class="mobile-nav-drawer">
+    <div class="mobile-nav-header">
+      <img src="assets/images/logo.webp" alt="إبصار الإعمار" style="height: 50px;">
+      <button class="mobile-nav-close" aria-label="إغلاق القائمة"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">الرئيسية</a>
+      <a href="about.html" class="mobile-nav-link">من نحن</a>
+      <a href="services.html" class="mobile-nav-link">خدماتنا</a>
+      <a href="projects.html" class="mobile-nav-link active">مشاريعنا</a>
+      <a href="contact.html" class="mobile-nav-link">تواصل معنا</a>
+      <a href="quote.html" class="mobile-nav-link">طلب عرض سعر</a>
+    </div>
+    <div style="margin-top: auto; display: flex; flex-direction: column; gap: 12px;">
+      <a href="javascript:void(0)" onclick="openWhatsApp('السلام عليكم، أتواصل معكم بخصوص المشاريع.')" class="btn btn-whatsapp">
+        <i class="fab fa-whatsapp"></i> محادثة واتساب
+      </a>
+      <a href="quote.html" class="btn btn-primary">
+        <i class="fas fa-calculator"></i> حاسبة وعرض سعر
+      </a>
+    </div>
+  </div>
+
+  <!-- ترويسة الصفحة (Page Header) -->
+  <section class="page-header">
+    <div class="page-header-overlay"></div>
+    <div class="container">
+      <div class="page-header-content reveal">
+        <h1 class="page-header-title">معرض <span>أعمالنا ومشاريعنا</span></h1>
+        <p class="page-header-desc">سجل يجسد إتقان التنفيذ، دقة التفاصيل، والتزامنا بأعلى المعايير الإنشائية والمعمارية.</p>
+        <div class="breadcrumb">
+          <a href="index.html">الرئيسية</a>
+          <i class="fas fa-chevron-left" style="font-size: 0.75rem; color: rgba(255,255,255,0.6);"></i>
+          <span>مشاريعنا</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- قسم المشاريع مع التصفية التفاعلية -->
+  <section class="section-padding">
+    <div class="container">
+
+      <!-- تنويه الشفافية للمحتوى التجريبي -->
+      <div class="demo-notice-banner reveal">
+        <i class="fas fa-shield-alt"></i>
+        <p><strong>شفافية واحترافية:</strong> في إطار الشفافية والمصداقية المهنية لشركة إبصار الإعمار للمقاولات، نوضح أن النماذج أدناه هي عينات استعراضية تجريبية توضح مستويات التنفيذ المعماري والهندسي المعتمد لدينا، وسيتم تحديثها تلقائياً بصور ومعلومات مشاريع الشركة الحصرية فور اعتماد النشر.</p>
+      </div>
+
+      <!-- أزرار التصفية (Filter Tabs) -->
+      <div class="portfolio-filter-wrapper reveal">
+        <button class="filter-btn active" data-filter="all"><i class="fas fa-th"></i> كافة المشاريع</button>
+        <button class="filter-btn" data-filter="سكني"><i class="fas fa-home"></i> القطاع السكني والفلل</button>
+        <button class="filter-btn" data-filter="تجاري"><i class="fas fa-city"></i> المباني والأبراج التجارية</button>
+        <button class="filter-btn" data-filter="تشطيبات"><i class="fas fa-paint-roller"></i> التشطيبات والديكور</button>
+        <button class="filter-btn" data-filter="إنشائي"><i class="fas fa-hard-hat"></i> الهياكل الإنشائية والعظم</button>
+      </div>
+
+      <!-- شبكة بطاقات المشاريع -->
+      <div class="grid-3" id="projectsGrid">
+
+        <!-- مشروع 1: سكني -->
+        <div class="project-card project-item reveal" data-category="سكني">
+          <div class="project-image-box">
+            <a href="project-1.html">
+              <img src="assets/images/فلل.jpg" alt="مجمع الفلل السكنية الفاخرة">
+            </a>
+            <span class="project-category-badge">سكني</span>
+          </div>
+          <div class="project-info-body">
+            <h3 class="project-title"><a href="project-1.html">مجمع الفلل السكنية الفاخرة</a></h3>
+            <p class="project-desc">تشييد فلل مودرن بمواصفات حصرية تشمل الهيكل العظم، أعمال العزل الحراري والمائي، والتشطيبات الفاخرة للواجهات.</p>
+            <div class="project-meta-grid">
+              <div class="project-meta-item"><i class="fas fa-vector-square"></i> 3,200 م²</div>
+              <div class="project-meta-item"><i class="fas fa-map-marker-alt"></i> الرياض</div>
+              <div class="project-meta-item"><i class="fas fa-clock"></i> 14 شهر</div>
+            </div>
+            <div class="project-card-footer">
+              <a href="project-1.html" class="btn btn-outline btn-sm">
+                <i class="fas fa-eye"></i> استعراض التفاصيل
+              </a>
+              <button class="btn btn-whatsapp btn-sm" onclick="requestProjectWhatsApp('مجمع الفلل السكنية الفاخرة')">
+                <i class="fab fa-whatsapp"></i> طلب مماثل
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- مشروع 2: تجاري -->
+        <div class="project-card project-item reveal reveal-delay-1" data-category="تجاري">
+          <div class="project-image-box">
+            <a href="project-2.html">
+              <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" alt="برج الأعمال والمكاتب التجارية">
+            </a>
+            <span class="project-category-badge">تجاري</span>
+          </div>
+          <div class="project-info-body">
+            <h3 class="project-title"><a href="project-2.html">برج الأعمال والمكاتب التجارية</a></h3>
+            <p class="project-desc">مبنى إداري متطور متعدد الأدوار مع واجهات زجاجية ذكية عازلة وأنظمة تهوية ومكافحة حريق بأعلى معايير الأمان.</p>
+            <div class="project-meta-grid">
+              <div class="project-meta-item"><i class="fas fa-vector-square"></i> 6,500 م²</div>
+              <div class="project-meta-item"><i class="fas fa-map-marker-alt"></i> جدة</div>
+              <div class="project-meta-item"><i class="fas fa-clock"></i> 18 شهر</div>
+            </div>
+            <div class="project-card-footer">
+              <a href="project-2.html" class="btn btn-outline btn-sm">
+                <i class="fas fa-eye"></i> استعراض التفاصيل
+              </a>
+              <button class="btn btn-whatsapp btn-sm" onclick="requestProjectWhatsApp('برج الأعمال والمكاتب التجارية')">
+                <i class="fab fa-whatsapp"></i> طلب مماثل
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- مشروع 3: تشطيبات -->
+        <div class="project-card project-item reveal reveal-delay-2" data-category="تشطيبات">
+          <div class="project-image-box">
+            <a href="project-3.html">
+              <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80" alt="قصر المعذر وتشطيبات الديكور الفاخر">
+            </a>
+            <span class="project-category-badge">تشطيبات</span>
+          </div>
+          <div class="project-info-body">
+            <h3 class="project-title"><a href="project-3.html">قصر المعذر وتشطيبات الديكور الفاخر</a></h3>
+            <p class="project-desc">أعمال تشطيب داخلي استثنائية تشمل الرخام الطبيعي الإيطالي، التكسيات الخشبية، والأسقف الجبسية مع أنظمة إضاءة ذكية.</p>
+            <div class="project-meta-grid">
+              <div class="project-meta-item"><i class="fas fa-vector-square"></i> 1,850 م²</div>
+              <div class="project-meta-item"><i class="fas fa-map-marker-alt"></i> الرياض</div>
+              <div class="project-meta-item"><i class="fas fa-clock"></i> 8 أشهر</div>
+            </div>
+            <div class="project-card-footer">
+              <a href="project-3.html" class="btn btn-outline btn-sm">
+                <i class="fas fa-eye"></i> استعراض التفاصيل
+              </a>
+              <button class="btn btn-whatsapp btn-sm" onclick="requestProjectWhatsApp('قصر المعذر وتشطيبات الديكور الفاخر')">
+                <i class="fab fa-whatsapp"></i> طلب مماثل
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- مشروع 4: تجاري / طبي -->
+        <div class="project-card project-item reveal" data-category="تجاري">
+          <div class="project-image-box">
+            <a href="project-4.html">
+              <img src="assets/images/مبني-تجري 2.jpg" alt="المبنى الطبي والمختبرات المركزية">
+            </a>
+            <span class="project-category-badge">تجاري</span>
+          </div>
+          <div class="project-info-body">
+            <h3 class="project-title"><a href="project-4.html">المبنى التجاري </a></h3>
+            <p class="project-desc">منشأة تخصصية وفق اشتراطات الكود الصحي والدفاع المدني، مع تمديدات غازات طبية وعزل هندسي دقيق.</p>
+            <div class="project-meta-grid">
+              <div class="project-meta-item"><i class="fas fa-vector-square"></i> 4,100 م²</div>
+              <div class="project-meta-item"><i class="fas fa-map-marker-alt"></i> الخبر</div>
+              <div class="project-meta-item"><i class="fas fa-clock"></i> 16 شهر</div>
+            </div>
+            <div class="project-card-footer">
+              <a href="project-4.html" class="btn btn-outline btn-sm">
+                <i class="fas fa-eye"></i> استعراض التفاصيل
+              </a>
+              <button class="btn btn-whatsapp btn-sm" onclick="requestProjectWhatsApp('المبنى الطبي والمختبرات المركزية')">
+                <i class="fab fa-whatsapp"></i> طلب مماثل
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- مشروع 5: إنشائي -->
+        <div class="project-card project-item reveal reveal-delay-1" data-category="إنشائي">
+          <div class="project-image-box">
+            <a href="project-5.html">
+              <img src="assets/images/هيكل2.jpg" alt="مشروع الهياكل الخرسانية والبناء العظم">
+            </a>
+            <span class="project-category-badge">إنشائي</span>
+          </div>
+          <div class="project-info-body">
+            <h3 class="project-title"><a href="project-5.html">مشروع الهياكل الخرسانية والبناء العظم</a></h3>
+            <p class="project-desc">تنفيذ قواعد خرسانية مسلحة، أعمدة، وأسقف هوردي بمواد مقاومة وفحوصات مخبرية مستمرة تؤكد صلابة الهيكل.</p>
+            <div class="project-meta-grid">
+              <div class="project-meta-item"><i class="fas fa-vector-square"></i> 5,000 م²</div>
+              <div class="project-meta-item"><i class="fas fa-map-marker-alt"></i> الدمام</div>
+              <div class="project-meta-item"><i class="fas fa-clock"></i> 10 أشهر</div>
+            </div>
+            <div class="project-card-footer">
+              <a href="project-5.html" class="btn btn-outline btn-sm">
+                <i class="fas fa-eye"></i> استعراض التفاصيل
+              </a>
+              <button class="btn btn-whatsapp btn-sm" onclick="requestProjectWhatsApp('مشروع الهياكل الخرسانية والبناء العظم')">
+                <i class="fab fa-whatsapp"></i> طلب مماثل
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- مشروع 6: تشطيبات وترميم -->
+        <div class="project-card project-item reveal reveal-delay-2" data-category="تشطيبات">
+          <div class="project-image-box">
+            <a href="project-6.html">
+              <img src="assets/images/تشطيب.jpg" alt="تطوير وترميم الواجهات السكنية الحديثة">
+            </a>
+            <span class="project-category-badge">تشطيبات</span>
+          </div>
+          <div class="project-info-body">
+            <h3 class="project-title"><a href="project-6.html">تطوير وترميم الواجهات الحديثة</a></h3>
+            <p class="project-desc">تحديث معماري شامل للواجهات باستخدام شرائح الألمنيوم والحجر والإضاءات المخفية لإضفاء طابع عصري فاخر.</p>
+            <div class="project-meta-grid">
+              <div class="project-meta-item"><i class="fas fa-vector-square"></i> 1,400 م²</div>
+              <div class="project-meta-item"><i class="fas fa-map-marker-alt"></i> مكة المكرمة</div>
+              <div class="project-meta-item"><i class="fas fa-clock"></i> 5 أشهر</div>
+            </div>
+            <div class="project-card-footer">
+              <a href="project-6.html" class="btn btn-outline btn-sm">
+                <i class="fas fa-eye"></i> استعراض التفاصيل
+              </a>
+              <button class="btn btn-whatsapp btn-sm" onclick="requestProjectWhatsApp('تطوير وترميم الواجهات السكنية الحديثة')">
+                <i class="fab fa-whatsapp"></i> طلب مماثل
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- بانر الدعوة للعمل -->
+  <section class="section-padding bg-light">
+    <div class="container">
+      <div class="cta-banner reveal">
+        <div class="cta-banner-content">
+          <span class="section-badge" style="background: rgba(255,255,255,0.15); color: var(--secondary);"><i class="fas fa-project-diagram"></i> إتقان في كل تفصيل</span>
+          <h2>هل لديك مخطط ترغب في تحويله إلى واقع معماري باهر؟</h2>
+          <p>أرسل لنا مخططاتك الهندسية أو حدد موعداً مع استشاري إبصار الإعمار لدراسة المشروع وتقديم عرض سعر شامل ومفصل.</p>
+          
+          <div class="cta-buttons-group">
+            <a href="quote.html" class="btn btn-primary btn-lg">
+              <i class="fas fa-calculator"></i> حاسبة وطلب عرض السعر
+            </a>
+            <a href="javascript:void(0)" onclick="openWhatsApp('السلام عليكم ورحمة الله، لدي مخطط مشروع وأود دراسته وتسعيره مع شركة إبصار الإعمار.')" class="btn btn-whatsapp btn-lg">
+              <i class="fab fa-whatsapp"></i> إرسال المخطط عبر واتساب
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- الفوتر -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <a href="index.html" class="footer-logo">
+            <img src="assets/images/logo.webp" alt="إبصار الإعمار للمقاولات">
+          </a>
+          <p class="footer-about-text">شركة إبصار الإعمار للمقاولات، حلول إنشائية متكاملة تجمع بين الجودة والإتقان والالتزام. نسخر خبراتنا الهندسية لبناء مشاريع تلهم الحاضر وتبني المستقبل في المملكة العربية السعودية.</p>
+          <div class="footer-social-links">
+            <a href="javascript:void(0)" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="javascript:void(0)" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="javascript:void(0)" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="javascript:void(0)" onclick="openWhatsApp('السلام عليكم')" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">روابط الموقع</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html"><i class="fas fa-angle-left"></i> الرئيسية</a></li>
+            <li><a href="about.html"><i class="fas fa-angle-left"></i> من نحن</a></li>
+            <li><a href="services.html"><i class="fas fa-angle-left"></i> خدماتنا</a></li>
+            <li><a href="projects.html"><i class="fas fa-angle-left"></i> مشاريعنا</a></li>
+            <li><a href="quote.html"><i class="fas fa-angle-left"></i> طلب عرض سعر</a></li>
+            <li><a href="contact.html"><i class="fas fa-angle-left"></i> تواصل معنا</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">خدماتنا الإنشائية</h4>
+          <ul class="footer-links-list">
+            <li><a href="services.html"><i class="fas fa-angle-left"></i> الإنشاءات العامة</a></li>
+            <li><a href="services.html"><i class="fas fa-angle-left"></i> بناء الفلل والقصور</a></li>
+            <li><a href="services.html"><i class="fas fa-angle-left"></i> أعمال التشطيب والديكور</a></li>
+            <li><a href="services.html"><i class="fas fa-angle-left"></i> الترميم والصيانة الإنشائية</a></li>
+            <li><a href="services.html"><i class="fas fa-angle-left"></i> إدارة المشاريع والإشراف</a></li>
+            <li><a href="services.html"><i class="fas fa-angle-left"></i> الأعمال الكهروميكانيكية</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">بيانات التواصل</h4>
+          <div class="footer-contact-info">
+            <div class="footer-contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h5>المقر الرئيسي</h5>
+                <p>المملكة العربية السعودية</p>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fas fa-phone-alt"></i>
+              <div>
+                <h5>الهاتف المباشر</h5>
+                <a href="tel:+966500000000" dir="ltr">+966 50 000 0000</a>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fab fa-whatsapp"></i>
+              <div>
+                <h5>الواتساب المباشر</h5>
+                <a href="javascript:void(0)" onclick="openWhatsApp('السلام عليكم ورحمة الله')" dir="ltr">+966 50 000 0000</a>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h5>البريد الإلكتروني</h5>
+                <a href="mailto:info@ibsaralemaar.com">info@ibsaralemaar.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>جميع الحقوق محفوظة &copy; 2026 شركة إبصار الإعمار للمقاولات.</p>
+       <a class="asserai" target="_blank" href="https://asserai.com/">Developed by asser ai</a> 
+      </div>
+    </div>
+  </footer>
+
+  <!-- النافذة المنبثقة لتفاصيل المشروع (Modal) -->
+  <div class="modal-overlay" id="projectModal">
+    <div class="modal-box">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="إغلاق النافذة"><i class="fas fa-times"></i></button>
+      <img src="" alt="" class="modal-image" id="modalImg">
+      <div class="modal-content-inner">
+        <span class="project-category-badge" id="modalCategory" style="position: static; display: inline-block; margin-bottom: 10px;"></span>
+        <h3 class="modal-title" id="modalTitle"></h3>
+        <p class="text-muted" id="modalDesc" style="line-height: 1.8; margin-bottom: 20px;"></p>
+        
+        <div class="modal-specs-list">
+          <div class="modal-spec-item">
+            <strong>المساحة الإجمالية:</strong>
+            <span id="modalArea"></span>
+            <span id="modalArea"></span>
+          </div>
+          <div class="modal-spec-item">
+            <strong>المدينة / الموقع:</strong>
+            <span id="modalCity"></span>
+          </div>
+          <div class="modal-spec-item">
+            <strong>مدة التنفيذ:</strong>
+            <span id="modalDuration"></span>
+          </div>
+        </div>
+
+        <h4 style="font-size: 1.15rem; font-weight: 800; color: var(--primary); margin: 20px 0 12px;">نطاق الأعمال المنفذة:</h4>
+        <ul id="modalScope" style="margin-bottom: 25px; display: flex; flex-direction: column; gap: 8px;"></ul>
+
+        <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+          <button class="btn btn-whatsapp" id="modalWhatsAppBtn">
+            <i class="fab fa-whatsapp"></i> طلب تنفيذ مشروع مماثل
+          </button>
+          <a href="quote.html" class="btn btn-primary">
+            <i class="fas fa-calculator"></i> حاسبة عرض السعر
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- زر الواتساب العائم -->
+  <a href="javascript:void(0)" class="whatsapp-float-btn" aria-label="تواصل عبر واتساب">
+    <i class="fab fa-whatsapp"></i>
+    <span class="whatsapp-tooltip">تحدث معنا عبر واتساب</span>
+  </a>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

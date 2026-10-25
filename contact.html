@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تواصل معنا | شركة إبصار الإعمار للمقاولات</title>
+  <meta name="description" content="تواصل مع شركة إبصار الإعمار للمقاولات: اتصال مباشر، واتساب، زيارة المقر الرئيسي، أو إرسال استفسار عبر النموذج المباشر.">
+  
+  <link rel="shortcut icon" href="assets/images/logo.webp" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- الشريط العلوي -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-info">
+        <div class="top-bar-item">
+          <i class="fas fa-phone-alt"></i>
+          <a href="tel:+966500000000" dir="ltr">+966 50 000 0000</a>
+        </div>
+        <div class="top-bar-item">
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:info@ibsaralemaar.com">info@ibsaralemaar.com</a>
+        </div>
+        <div class="top-bar-item hide-on-mobile">
+          <i class="fas fa-clock"></i>
+          <span class="company-hours">السبت - الخميس: 8:00 ص - 6:00 م</span>
+        </div>
+      </div>
+      <div class="top-bar-info hide-on-mobile">
+        <div class="top-bar-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span class="company-address">المملكة العربية السعودية</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- شريط التنقل (Navbar) -->
+  <nav class="navbar">
+    <div class="container navbar-container">
+      <a href="index.html" class="navbar-brand">
+        <img src="assets/images/logo.webp" alt="شركة إبصار الإعمار للمقاولات">
+      </a>
+
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">الرئيسية</a></li>
+        <li><a href="about.html" class="nav-link">من نحن</a></li>
+        <li><a href="services.html" class="nav-link">خدماتنا</a></li>
+        <li><a href="projects.html" class="nav-link">مشاريعنا</a></li>
+        <li><a href="contact.html" class="nav-link active">تواصل معنا</a></li>
+      </ul>
+
+      <div class="navbar-actions">
+        <a href="javascript:void(0)" onclick="openWhatsApp('السلام عليكم ورحمة الله، أود التنسيق للتواصل مع قسم الاستشارات.')" class="btn btn-whatsapp btn-sm">
+          <i class="fab fa-whatsapp"></i> <span class="hide-on-mobile">تواصل عبر واتساب</span>
+        </a>
+        <a href="quote.html" class="btn btn-primary btn-sm">
+          <i class="fas fa-file-signature"></i> طلب عرض سعر
+        </a>
+        <button class="mobile-toggle" aria-label="فتح القائمة"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- القائمة الجانبية للموبايل -->
+  <div class="mobile-nav-backdrop"></div>
+  <div class="mobile-nav-drawer">
+    <div class="mobile-nav-header">
+      <img src="assets/images/logo.webp" alt="إبصار الإعمار" style="height: 50px;">
+      <button class="mobile-nav-close" aria-label="إغلاق القائمة"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">الرئيسية</a>
+      <a href="about.html" class="mobile-nav-link">من نحن</a>
+      <a href="services.html" class="mobile-nav-link">خدماتنا</a>
+      <a href="projects.html" class="mobile-nav-link">مشاريعنا</a>
+      <a href="contact.html" class="mobile-nav-link active">تواصل معنا</a>
+      <a href="quote.html" class="mobile-nav-link">طلب عرض سعر</a>
+    </div>
+    <div style="margin-top: auto; display: flex; flex-direction: column; gap: 12px;">
+      <a href="javascript:void(0)" onclick="openWhatsApp('السلام عليكم، أتواصل معكم عبر صفحة اتصل بنا.')" class="btn btn-whatsapp">
+        <i class="fab fa-whatsapp"></i> محادثة واتساب
+      </a>
+      <a href="quote.html" class="btn btn-primary">
+        <i class="fas fa-calculator"></i> حاسبة وعرض سعر
+      </a>
+    </div>
+  </div>
+
+  <!-- ترويسة الصفحة (Page Header) -->
+  <section class="page-header">
+    <div class="page-header-overlay"></div>
+    <div class="container">
+      <div class="page-header-content reveal">
+        <h1 class="page-header-title">تواصل <span>معنا الآن</span></h1>
+        <p class="page-header-desc">فريقنا الهندسي والإداري في خدمتكم دائماً للإجابة على كافة استفساراتكم ودراسة مشاريعكم.</p>
+        <div class="breadcrumb">
+          <a href="index.html">الرئيسية</a>
+          <i class="fas fa-chevron-left" style="font-size: 0.75rem; color: rgba(255,255,255,0.6);"></i>
+          <span>تواصل معنا</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- بطاقات التواصل المباشر ونموذج الاتصال -->
+  <section class="section-padding">
+    <div class="container">
+
+      <!-- 4 بطاقات اتصال رئيسية -->
+      <div class="contact-info-cards reveal">
+        <div class="contact-card">
+          <div class="contact-card-icon"><i class="fas fa-phone-alt"></i></div>
+          <h4>الاتصال المباشر</h4>
+          <p style="margin-bottom: 6px;">للتواصل الهاتفي السريع</p>
+          <a href="tel:+966500000000" class="text-primary font-weight-bold" dir="ltr">+966 50 000 0000</a>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-card-icon" style="background: rgba(37, 211, 102, 0.12); color: #25D366;"><i class="fab fa-whatsapp"></i></div>
+          <h4>المحادثة الفورية</h4>
+          <p style="margin-bottom: 6px;">واتساب متاح للمساعدة السريعة</p>
+          <a href="javascript:void(0)" onclick="openWhatsApp('السلام عليكم ورحمة الله')" class="text-secondary font-weight-bold" dir="ltr">966554420005</a>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
+          <h4>البريد الإلكتروني</h4>
+          <p style="margin-bottom: 6px;">للمراسلات الرسمية والمخططات</p>
+          <a href="mailto:info@ibsaralemaar.com" class="text-primary font-weight-bold">info@ibsaralemaar.com</a>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-card-icon"><i class="fas fa-clock"></i></div>
+          <h4>أوقات العمل</h4>
+          <p style="margin-bottom: 6px;">المقر الرئيسي والمعارض</p>
+          <span class="text-primary font-weight-bold" style="font-size: 0.9rem;">السبت - الخميس: 8ص - 6م</span>
+        </div>
+      </div>
+
+      <!-- شبكة النموذج والخريطة -->
+      <div class="grid-2" style="align-items: stretch; margin-top: 30px;">
+        
+        <!-- نموذج التواصل المباشر مع واتساب -->
+        <div class="form-box reveal">
+          <span class="section-badge"><i class="fas fa-paper-plane"></i> نموذج المراسلة</span>
+          <h2 class="section-title" style="font-size: 1.8rem; margin-bottom: 12px;">أرسل طلبك <span>أو استفسارك</span></h2>
+          <p class="text-muted" style="margin-bottom: 25px; font-size: 0.95rem;">املأ البيانات أدناه وسيتم توجيه طلبك فوراً إلى مهندسينا المختصين عبر واتساب برسالة منظمة وموثقة.</p>
+
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="cName" class="form-label">الاسم الكريم <span style="color: red;">*</span></label>
+                <input type="text" id="cName" class="form-control" placeholder="مثال: محمد السبيعي" required>
+              </div>
+
+              <div class="form-group">
+                <label for="cPhone" class="form-label">رقم الجوال <span style="color: red;">*</span></label>
+                <input type="tel" id="cPhone" class="form-control" placeholder="مثال: 0501234567" required dir="ltr">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="cService" class="form-label">الخدمة المطلوبة</label>
+                <select id="cService" class="form-control">
+                  <option value="الإنشاءات العامة والمباني">الإنشاءات العامة والمباني</option>
+                  <option value="بناء فيلا سكنية (عظم / تسليم مفتاح)">بناء فيلا سكنية (عظم / تسليم مفتاح)</option>
+                  <option value="أعمال التشطيب والديكور الداخلي والخارجي">أعمال التشطيب والديكور الداخلي والخارجي</option>
+                  <option value="الترميم والتطوير الإنشائي">الترميم والتطوير الإنشائي</option>
+                  <option value="إدارة المشاريع والإشراف الهندسي">إدارة المشاريع والإشراف الهندسي</option>
+                  <option value="الأعمال الكهروميكانيكية والبنية التحتية">الأعمال الكهروميكانيكية والبنية التحتية</option>
+                  <option value="استشارة هندسية عامة">استشارة هندسية عامة</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="cCity" class="form-label">المدينة / الحي</label>
+                <input type="text" id="cCity" class="form-control" placeholder="مثال: الرياض - حي الملقا">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="cMessage" class="form-label">تفاصيل الطلب أو المشروع <span style="color: red;">*</span></label>
+              <textarea id="cMessage" class="form-control" rows="4" placeholder="يرجى ذكر المساحة التقريبية، رغبتك في بناء عظم أو تشطيب، أو أي استفسارات خاصة..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-whatsapp btn-lg" style="width: 100%;">
+              <i class="fab fa-whatsapp"></i> إرسال الطلب عبر واتساب الآن
+            </button>
+            <p style="font-size: 0.8rem; color: var(--text-muted); text-align: center; margin-top: 10px;">
+              <i class="fas fa-lock"></i> بياناتك في أمان تام ولا تتم مشاركتها مع أي جهة خارجية.
+            </p>
+          </form>
+        </div>
+
+        <!-- الخريطة الجغرافية والمعلومات -->
+        <div class="reveal reveal-delay-1" style="display: flex; flex-direction: column;">
+          <div class="map-container" style="flex-grow: 1;">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d463879.2652250917!2d46.5423348574488!3d24.72555533816773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d48939b%3A0x7ff97233560b40e5!2z2KfZhNix2YrYp9i2INin2YTYs9i52YjYr9mK2Kk!5e0!3m2!1sar!2ssa!4v1710000000000!5m2!1sar!2ssa" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+              title="موقع الشركة">
+            </iframe>
+          </div>
+          <div style="background: var(--bg-light); padding: 18px 24px; border-radius: var(--radius-md); margin-top: 16px; border: 1px solid var(--border-light);">
+            <p style="margin: 0; font-size: 0.92rem; color: var(--primary); font-weight: 700;">
+              <i class="fas fa-map-marker-alt text-secondary"></i> العنوان الرئيسي: المملكة العربية السعودية (الموقع الموضح أعلاه تقريبي حتى يتم تحديث الإحداثيات الدقيقة من إدارة الشركة).
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- الفوتر -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <a href="index.html" class="footer-logo">
+            <img src="assets/images/logo.webp" alt="إبصار الإعمار للمقاولات">
+          </a>
+          <p class="footer-about-text">شركة إبصار الإعمار للمقاولات، حلول إنشائية متكاملة تجمع بين الجودة والإتقان والالتزام. نسخر خبراتنا الهندسية لبناء مشاريع تلهم الحاضر وتبني المستقبل في المملكة العربية السعودية.</p>
+          <div class="footer-social-links">
+            <a href="javascript:void(0)" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="javascript:void(0)" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="javascript:void(0)" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="javascript:void(0)" onclick="openWhatsApp('السلام عليكم')" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">روابط الموقع</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html"><i class="fas fa-angle-left"></i> الرئيسية</a></li>
+            <li><a href="about.html"><i class="fas fa-angle-left"></i> من نحن</a></li>
+            <li><a href="services.html"><i class="fas fa-angle-left"></i> خدماتنا</a></li>
+            <li><a href="projects.html"><i class="fas fa-angle-left"></i> مشاريعنا</a></li>
+            <li><a href="quote.html"><i class="fas fa-angle-left"></i> طلب عرض سعر</a></li>
+            <li><a href="contact.html"><i class="fas fa-angle-left"></i> تواصل معنا</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">خدماتنا الإنشائية</h4>
+          <ul class="footer-links-list">
+            <li><a href="services.html"><i class="fas fa-angle-left"></i> الإنشاءات العامة</a></li>
+            <li><a href="services.html"><i class="fas fa-angle-left"></i> بناء الفلل والقصور</a></li>
+            <li><a href="services.html"><i class="fas fa-angle-left"></i> أعمال التشطيب والديكور</a></li>
+            <li><a href="services.html"><i class="fas fa-angle-left"></i> الترميم والصيانة الإنشائية</a></li>
+            <li><a href="services.html"><i class="fas fa-angle-left"></i> إدارة المشاريع والإشراف</a></li>
+            <li><a href="services.html"><i class="fas fa-angle-left"></i> الأعمال الكهروميكانيكية</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">بيانات التواصل</h4>
+          <div class="footer-contact-info">
+            <div class="footer-contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h5>المقر الرئيسي</h5>
+                <p>المملكة العربية السعودية</p>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fas fa-phone-alt"></i>
+              <div>
+                <h5>الهاتف المباشر</h5>
+                <a href="tel:+966500000000" dir="ltr">+966 50 000 0000</a>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fab fa-whatsapp"></i>
+              <div>
+                <h5>الواتساب المباشر</h5>
+                <a href="javascript:void(0)" onclick="openWhatsApp('السلام عليكم ورحمة الله')" dir="ltr">+966 50 000 0000</a>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h5>البريد الإلكتروني</h5>
+                <a href="mailto:info@ibsaralemaar.com">info@ibsaralemaar.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>جميع الحقوق محفوظة &copy; 2026 شركة إبصار الإعمار للمقاولات.</p>
+       <a class="asserai" target="_blank" href="https://asserai.com/">Developed by asser ai</a> 
+      </div>
+    </div>
+  </footer>
+
+  <!-- زر الواتساب العائم -->
+  <a href="javascript:void(0)" class="whatsapp-float-btn" aria-label="تواصل عبر واتساب">
+    <i class="fab fa-whatsapp"></i>
+    <span class="whatsapp-tooltip">تحدث معنا عبر واتساب</span>
+  </a>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

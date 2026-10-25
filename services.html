@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>خدماتنا | شركة إبصار الإعمار للمقاولات</title>
+  <meta name="description" content="خدمات إنشائية وهندسية متكاملة: الإنشاءات العامة، بناء الفلل والقصور، التشطيبات والديكور، الترميم، وإدارة المشاريع والإشراف الهندسي.">
+  
+  <link rel="shortcut icon" href="assets/images/logo.webp" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- الشريط العلوي -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-bar-info">
+        <div class="top-bar-item">
+          <i class="fas fa-phone-alt"></i>
+          <a href="tel:+966500000000" dir="ltr">+966 50 000 0000</a>
+        </div>
+        <div class="top-bar-item">
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:info@ibsaralemaar.com">info@ibsaralemaar.com</a>
+        </div>
+        <div class="top-bar-item hide-on-mobile">
+          <i class="fas fa-clock"></i>
+          <span class="company-hours">السبت - الخميس: 8:00 ص - 6:00 م</span>
+        </div>
+      </div>
+      <div class="top-bar-info hide-on-mobile">
+        <div class="top-bar-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span class="company-address">المملكة العربية السعودية</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- شريط التنقل (Navbar) -->
+  <nav class="navbar">
+    <div class="container navbar-container">
+      <a href="index.html" class="navbar-brand">
+        <img src="assets/images/logo.webp" alt="شركة إبصار الإعمار للمقاولات">
+      </a>
+
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">الرئيسية</a></li>
+        <li><a href="about.html" class="nav-link">من نحن</a></li>
+        <li><a href="services.html" class="nav-link active">خدماتنا</a></li>
+        <li><a href="projects.html" class="nav-link">مشاريعنا</a></li>
+        <li><a href="contact.html" class="nav-link">تواصل معنا</a></li>
+      </ul>
+
+      <div class="navbar-actions">
+        <a href="javascript:void(0)" onclick="openWhatsApp('السلام عليكم ورحمة الله، أود الاستفسار عن تفاصيل خدمات المقاولات.')" class="btn btn-whatsapp btn-sm">
+          <i class="fab fa-whatsapp"></i> <span class="hide-on-mobile">تواصل عبر واتساب</span>
+        </a>
+        <a href="quote.html" class="btn btn-primary btn-sm">
+          <i class="fas fa-file-signature"></i> طلب عرض سعر
+        </a>
+        <button class="mobile-toggle" aria-label="فتح القائمة"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- القائمة الجانبية للموبايل -->
+  <div class="mobile-nav-backdrop"></div>
+  <div class="mobile-nav-drawer">
+    <div class="mobile-nav-header">
+      <img src="assets/images/logo.webp" alt="إبصار الإعمار" style="height: 50px;">
+      <button class="mobile-nav-close" aria-label="إغلاق القائمة"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">الرئيسية</a>
+      <a href="about.html" class="mobile-nav-link">من نحن</a>
+      <a href="services.html" class="mobile-nav-link active">خدماتنا</a>
+      <a href="projects.html" class="mobile-nav-link">مشاريعنا</a>
+      <a href="contact.html" class="mobile-nav-link">تواصل معنا</a>
+      <a href="quote.html" class="mobile-nav-link">طلب عرض سعر</a>
+    </div>
+    <div style="margin-top: auto; display: flex; flex-direction: column; gap: 12px;">
+      <a href="javascript:void(0)" onclick="openWhatsApp('السلام عليكم، أتواصل معكم بخصوص الخدمات.')" class="btn btn-whatsapp">
+        <i class="fab fa-whatsapp"></i> محادثة واتساب
+      </a>
+      <a href="quote.html" class="btn btn-primary">
+        <i class="fas fa-calculator"></i> حاسبة وعرض سعر
+      </a>
+    </div>
+  </div>
+
+  <!-- ترويسة الصفحة (Page Header) -->
+  <section class="page-header">
+    <div class="page-header-overlay"></div>
+    <div class="container">
+      <div class="page-header-content reveal">
+        <h1 class="page-header-title">خدماتنا <span>الهندسية والإنشائية</span></h1>
+        <p class="page-header-desc">منظومة شاملة من الحلول الإنشائية المتخصصة، ننفذها بكفاءة هندسية عالية وضمانات موثقة.</p>
+        <div class="breadcrumb">
+          <a href="index.html">الرئيسية</a>
+          <i class="fas fa-chevron-left" style="font-size: 0.75rem; color: rgba(255,255,255,0.6);"></i>
+          <span>خدماتنا</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- تفاصيل الخدمات الرئيسية الشاملة -->
+  <section class="section-padding">
+    <div class="container">
+
+      <!-- الخدمة 1: الإنشاءات العامة -->
+      <div class="service-detail-item reveal" id="general-construction">
+        <div class="service-detail-img">
+          <img src="assets/images/مبني-تجري 2.jpg" alt="الإنشاءات العامة والمباني التجارية">
+        </div>
+        <div class="service-detail-content">
+          <span class="section-badge"><i class="fas fa-city"></i> الخدمة الأولى</span>
+          <h2 class="section-title">الإنشاءات العامة <span>والمباني التجارية</span></h2>
+          <p class="text-muted" style="margin-bottom: 20px;">نمتلك القدرة والمعدات المتطورة لتنفيذ كبرى المنشآت التجارية والسكنية والإدارية من مرحلة الحفر وحتى الهيكل الخرساني والتشطيب الكامل، مع الالتزام التام بالمواصفات الهندسية ومطابقة الكود السعودي للبناء.</p>
+          
+          <h4 style="font-size: 1.1rem; color: var(--primary); margin-bottom: 12px; font-weight: 800;">نطاق العمل ومميزات الخدمة:</h4>
+          <ul class="service-features-list" style="margin-bottom: 25px;">
+            <li><i class="fas fa-check-circle text-secondary"></i> أعمال الحفر، التدعيم، والإحلال وفق تقارير فحص التربة.</li>
+            <li><i class="fas fa-check-circle text-secondary"></i> صب الخرسانات المسلحة المقاومة للأملاح والكبريتات.</li>
+            <li><i class="fas fa-check-circle text-secondary"></i> تشييد الهياكل المعدنية والجمالونات للصالات والمستودعات.</li>
+            <li><i class="fas fa-check-circle text-secondary"></i> التزام تام بالسلامة المهنية واشتراطات الدفاع المدني.</li>
+          </ul>
+
+          <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+            <button class="btn btn-primary" onclick="requestServiceWhatsApp('الإنشاءات العامة والمباني التجارية')">
+              <i class="fab fa-whatsapp"></i> اطلب عرض سعر لهذه الخدمة
+            </button>
+            <a href="quote.html" class="btn btn-outline">
+              <i class="fas fa-calculator"></i> حاسبة التكاليف
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- الخدمة 2: بناء الفلل السكنية -->
+      <div class="service-detail-item reveal" id="villas">
+        <div class="service-detail-img">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="بناء الفلل والقصور السكنية">
+        </div>
+        <div class="service-detail-content">
+          <span class="section-badge"><i class="fas fa-home"></i> الخدمة الثانية</span>
+          <h2 class="section-title">بناء الفلل <span>والقصور السكنية</span></h2>
+          <p class="text-muted" style="margin-bottom: 20px;">نحول رؤيتك لمنزل أحلامك إلى واقع ملموس ينبض بالفخامة والأمان. نقدم خدمات متكاملة تشمل البناء عظم، تسليم على المفتاح، أو الإشراف المرحلي، مع مراعاة أدق التفاصيل المعمارية التي تضمن الراحة والاستدامة.</p>
+          
+          <h4 style="font-size: 1.1rem; color: var(--primary); margin-bottom: 12px; font-weight: 800;">نطاق العمل ومميزات الخدمة:</h4>
+          <ul class="service-features-list" style="margin-bottom: 25px;">
+            <li><i class="fas fa-check-circle text-secondary"></i> تنفيذ الفلل المودرن، النيوكلاسيك، والتصاميم الحصرية.</li>
+            <li><i class="fas fa-check-circle text-secondary"></i> عزل مائي وحراري معتمد بضمانات رسمية تصل إلى 10 سنوات.</li>
+            <li><i class="fas fa-check-circle text-secondary"></i> تمديدات سباكة وكهرباء وفق أحدث الأنظمة الذكية.</li>
+            <li><i class="fas fa-check-circle text-secondary"></i> تنسيق المسطحات الخارجية، المسابح، والمداخل الفخمة.</li>
+          </ul>
+
+          <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+            <button class="btn btn-primary" onclick="requestServiceWhatsApp('بناء الفلل والقصور السكنية')">
+              <i class="fab fa-whatsapp"></i> اطلب عرض سعر لهذه الخدمة
+            </button>
+            <a href="quote.html" class="btn btn-outline">
+              <i class="fas fa-calculator"></i> حاسبة التكاليف
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- الخدمة 3: أعمال التشطيب والديكور -->
+      <div class="service-detail-item reveal" id="finishing">
+        <div class="service-detail-img">
+          <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80" alt="أعمال التشطيب والديكور الفاخر">
+        </div>
+        <div class="service-detail-content">
+          <span class="section-badge"><i class="fas fa-paint-roller"></i> الخدمة الثالثة</span>
+          <h2 class="section-title">أعمال التشطيب <span>والديكور الفاخر</span></h2>
+          <p class="text-muted" style="margin-bottom: 20px;">اللمسات النهائية هي روح المبنى. يتولى فريقنا المختص في التشطيبات تحويل المساحات الصامتة إلى لوحات بصرية راقية باستخدام أجود خامات الرخام الطبيعي، الباركيه، التكسيات الجدارية، والإنارة الهندسية المخفية.</p>
+          
+          <h4 style="font-size: 1.1rem; color: var(--primary); margin-bottom: 12px; font-weight: 800;">نطاق العمل ومميزات الخدمة:</h4>
+          <ul class="service-features-list" style="margin-bottom: 25px;">
+            <li><i class="fas fa-check-circle text-secondary"></i> توريد وتركيب الرخام الإيطالي والإسباني والبورسلان الفاخر.</li>
+            <li><i class="fas fa-check-circle text-secondary"></i> أسقف جبس بورد ديكورية مع مجاري إنارة مغناطيسية حديثة.</li>
+            <li><i class="fas fa-check-circle text-secondary"></i> دهانات ديكورية ومقاومة للرطوبة وتكسيات الخشب والـ WPC.</li>
+            <li><i class="fas fa-check-circle text-secondary"></i> تشطيب الواجهات بالحجر الطبيعي وتكسيات الألمنيوم (الكلادينج).</li>
+          </ul>
+
+          <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+            <button class="btn btn-primary" onclick="requestServiceWhatsApp('أعمال التشطيب والديكور الفاخر')">
+              <i class="fab fa-whatsapp"></i> اطلب عرض سعر لهذه الخدمة
+            </button>
+            <a href="quote.html" class="btn btn-outline">
+              <i class="fas fa-calculator"></i> حاسبة التكاليف
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- الخدمة 4: الترميم والتطوير الإنشائي -->
+      <div class="service-detail-item reveal" id="renovation">
+        <div class="service-detail-img">
+          <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80" alt="الترميم والتطوير الإنشائي والصيانة">
+        </div>
+        <div class="service-detail-content">
+          <span class="section-badge"><i class="fas fa-tools"></i> الخدمة الرابعة</span>
+          <h2 class="section-title">الترميم والتأهيل <span>والصيانة الإنشائية</span></h2>
+          <p class="text-muted" style="margin-bottom: 20px;">نعيد إحياء المباني القائمة وتحديثها بالكامل، بدءاً من المعالجة الإنشائية للشروخ وتدعيم الأعمدة والأسقف، وحتى التجديد الشامل للواجهات والشبكات القديمة لرفع القيمة السوقية للعقار وتمديد عمره الافتراضي.</p>
+          
+          <h4 style="font-size: 1.1rem; color: var(--primary); margin-bottom: 12px; font-weight: 800;">نطاق العمل ومميزات الخدمة:</h4>
+          <ul class="service-features-list" style="margin-bottom: 25px;">
+            <li><i class="fas fa-check-circle text-secondary"></i> فحص وتقييم السلامة الإنشائية للمبنى بأجهزة اختبار متخصصة.</li>
+            <li><i class="fas fa-check-circle text-secondary"></i> تدعيم الخرسانات واستخدام المواد الإيبوكسية والبوليمرية.</li>
+            <li><i class="fas fa-check-circle text-secondary"></i> تجديد شبكات المياه والصرف الصحي وتمديدات الكهرباء.</li>
+            <li><i class="fas fa-check-circle text-secondary"></i> إعادة تصميم الواجهات وتحويلها إلى واجهات مودرن جذابة.</li>
+          </ul>
+
+          <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+            <button class="btn btn-primary" onclick="requestServiceWhatsApp('الترميم والتطوير الإنشائي والصيانة')">
+              <i class="fab fa-whatsapp"></i> اطلب عرض سعر لهذه الخدمة
+            </button>
+            <a href="quote.html" class="btn btn-outline">
+              <i class="fas fa-calculator"></i> حاسبة التكاليف
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- الخدمة 5: إدارة المشاريع والإشراف الهندسي -->
+      <div class="service-detail-item reveal" id="management">
+        <div class="service-detail-img">
+          <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80" alt="إدارة المشاريع والإشراف الهندسي">
+        </div>
+        <div class="service-detail-content">
+          <span class="section-badge"><i class="fas fa-tasks"></i> الخدمة الخامسة</span>
+          <h2 class="section-title">إدارة المشاريع <span>والإشراف الهندسي</span></h2>
+          <p class="text-muted" style="margin-bottom: 20px;">نوفر للمستثمرين وأصحاب المشاريع خدمة إدارة هندسية متكاملة تضمن ضبط الجودة، تقليل الفاقد، ومراقبة الميزانية والجدول الزمني عبر تقارير مهنية دورية ورقابة ميدانية صارمة في الموقع.</p>
+          
+          <h4 style="font-size: 1.1rem; color: var(--primary); margin-bottom: 12px; font-weight: 800;">نطاق العمل ومميزات الخدمة:</h4>
+          <ul class="service-features-list" style="margin-bottom: 25px;">
+            <li><i class="fas fa-check-circle text-secondary"></i> إعداد جداول الكميات (BOQ) والمواصفات التعاقدية.</li>
+            <li><i class="fas fa-check-circle text-secondary"></i> تدقيق المخططات التنفيذية (Shop Drawings) واعتماد المواد.</li>
+            <li><i class="fas fa-check-circle text-secondary"></i> فحص مراحل الصب واستلام حديد التسليح قبل الصب.</li>
+            <li><i class="fas fa-check-circle text-secondary"></i> إصدار تقارير الإنجاز الأسبوعية ومتابعة مقاولي الباطن.</li>
+          </ul>
+
+          <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+            <button class="btn btn-primary" onclick="requestServiceWhatsApp('إدارة المشاريع والإشراف الهندسي')">
+              <i class="fab fa-whatsapp"></i> اطلب عرض سعر لهذه الخدمة
+            </button>
+            <a href="quote.html" class="btn btn-outline">
+              <i class="fas fa-calculator"></i> حاسبة التكاليف
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- الخدمة 6: الأعمال الكهروميكانيكية والبنية التحتية -->
+      <div class="service-detail-item reveal" id="mep">
+        <div class="service-detail-img">
+          <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=800&q=80" alt="الأعمال الكهروميكانيكية والبنية التحتية">
+        </div>
+        <div class="service-detail-content">
+          <span class="section-badge"><i class="fas fa-bolt"></i> الخدمة السادسة</span>
+          <h2 class="section-title">الأعمال الكهروميكانيكية <span>والبنية التحتية</span></h2>
+          <p class="text-muted" style="margin-bottom: 20px;">تنفيذ شبكات الكهرباء والجهد المنخفض، أنظمة التكييف المركزي (HVAC)، شبكات مكافحة الحريق، وشبكات الصرف وتصريف السيول بأعلى درجات الكفاءة واعتماد أحدث المعدات الموفرة للطاقة.</p>
+          
+          <h4 style="font-size: 1.1rem; color: var(--primary); margin-bottom: 12px; font-weight: 800;">نطاق العمل ومميزات الخدمة:</h4>
+          <ul class="service-features-list" style="margin-bottom: 25px;">
+            <li><i class="fas fa-check-circle text-secondary"></i> تمديد واختبار شبكات التكييف المخفي والمركزي (VRF / Chiller).</li>
+            <li><i class="fas fa-check-circle text-secondary"></i> تركيب لوحات القواطع والتأريض وحماية الصواعق.</li>
+            <li><i class="fas fa-check-circle text-secondary"></i> شبكات إنذار ومكافحة الحريق المعتمدة من الدفاع المدني.</li>
+            <li><i class="fas fa-check-circle text-secondary"></i> ربط وتأسيس أنظمة المنازل الذكية والتحكم عن بعد (Smart Home).</li>
+          </ul>
+
+          <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+            <button class="btn btn-primary" onclick="requestServiceWhatsApp('الأعمال الكهروميكانيكية والبنية التحتية')">
+              <i class="fab fa-whatsapp"></i> اطلب عرض سعر لهذه الخدمة
+            </button>
+            <a href="quote.html" class="btn btn-outline">
+              <i class="fas fa-calculator"></i> حاسبة التكاليف
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- قسم الأسئلة الشائعة (FAQ Accordion) -->
+  <section class="section-padding bg-light">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-badge"><i class="fas fa-question-circle"></i> إجابات وافية</span>
+        <h2 class="section-title">الأسئلة الشائعة <span>عن خدماتنا</span></h2>
+        <p class="section-description">إليك أكثر الاستفسارات التي يطرحها عملاؤنا حول آلية التعاقد، الدفعات، والضمانات الإنشائية.</p>
+      </div>
+
+      <div class="faq-wrapper reveal">
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>كيف يتم حساب تكلفة المشروع وتسعيره؟</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>يتم التسعير بدقة بعد استلام ودراسة المخططات الهندسية الإنشائية والمعمارية، حيث يقوم فريق حساب الكميات لدينا بإعداد جدول كميات مفصل (BOQ) يشمل تكلفة المواد، الأيدي العاملة، ومراحل التنفيذ بدون أي تكاليف خفية، مع توفير خيارات تسعير تلائم ميزانية العميل.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>ما هي مدة الضمانات المقدمة على الأعمال الإنشائية والتشطيبات؟</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>نقدم ضماناً يصل إلى 10 سنوات على الهيكل الإنشائي وأعمال العزل المائي والحراري، وضمانات شاملة على تمديدات السباكة والكهرباء تمتد من سنة إلى 5 سنوات بحسب نوع المواد المعتمدة، مع شهادة ضمان رسمية موثقة تسلم مع محضر التسليم النهائي.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>كيف يتم توزيع دفعات المشروع خلال فترة البناء؟</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>ترتبط الدفعات المالية بمراحل الإنجاز الفعلية على أرض الواقع (Milestones). على سبيل المثال: دفعة مقدمة لبدء العمل، دفعة بعد صب القواعد، دفعة بعد صب الأعمدة، وهكذا، ولا يتم سداد أي دفعة إلا بعد استلام المهندس المشرف للمرحلة واعتمادها رسمياً.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>هل تلتزمون باشتراطات الكود السعودي للبناء (SBC)؟</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>نعم بكل تأكيد، جميع أعمالنا وتصاميمنا واختباراتنا الميدانية تنفذ وفق اشتراطات الكود السعودي للبناء، ونتعاون مع المكاتب الاستشارية المعتمدة وشركات التأمين ضد العيوب الخفية لتأمين كافة متطلبات التراخيص الرسمية.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>هل يمكنني طلب خدمة التشطيب فقط دون البناء العظم؟</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="faq-answer">
+            <p>نعم، نقدم خدمات التشطيب والديكور والتأثيث للمباني والفلل والشقق العظم أو القائمة، مع إمكانية تصميم وتنفيذ الديكورات الداخلية وتركيب الرخام والجبس بأعلى درجات الفخامة والإتقان.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- بانر الدعوة للعمل -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="cta-banner reveal">
+        <div class="cta-banner-content">
+          <span class="section-badge" style="background: rgba(255,255,255,0.15); color: var(--secondary);"><i class="fas fa-hand-holding-usd"></i> تسعير شفاف ودقيق</span>
+          <h2>جاهز لبدء مشروعك أو ترغب في استشارة هندسية؟</h2>
+          <p>تواصل مع فريقنا المتخصص الآن لمناقشة متطلبات مشروعك، أو احصل على عرض سعر فوري عبر واتساب.</p>
+          
+          <div class="cta-buttons-group">
+            <a href="quote.html" class="btn btn-primary btn-lg">
+              <i class="fas fa-calculator"></i> حاسبة عرض السعر التفاعلية
+            </a>
+            <a href="javascript:void(0)" onclick="openWhatsApp('السلام عليكم ورحمة الله، أود الاستفسار عن خدمات المقاولات والتشطيب.')" class="btn btn-whatsapp btn-lg">
+              <i class="fab fa-whatsapp"></i> تواصل مباشر عبر واتساب
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- الفوتر -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <a href="index.html" class="footer-logo">
+            <img src="assets/images/logo.webp" alt="إبصار الإعمار للمقاولات">
+          </a>
+          <p class="footer-about-text">شركة إبصار الإعمار للمقاولات، حلول إنشائية متكاملة تجمع بين الجودة والإتقان والالتزام. نسخر خبراتنا الهندسية لبناء مشاريع تلهم الحاضر وتبني المستقبل في المملكة العربية السعودية.</p>
+          <div class="footer-social-links">
+            <a href="javascript:void(0)" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="javascript:void(0)" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="javascript:void(0)" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="javascript:void(0)" onclick="openWhatsApp('السلام عليكم')" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">روابط الموقع</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html"><i class="fas fa-angle-left"></i> الرئيسية</a></li>
+            <li><a href="about.html"><i class="fas fa-angle-left"></i> من نحن</a></li>
+            <li><a href="services.html"><i class="fas fa-angle-left"></i> خدماتنا</a></li>
+            <li><a href="projects.html"><i class="fas fa-angle-left"></i> مشاريعنا</a></li>
+            <li><a href="quote.html"><i class="fas fa-angle-left"></i> طلب عرض سعر</a></li>
+            <li><a href="contact.html"><i class="fas fa-angle-left"></i> تواصل معنا</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">خدماتنا الإنشائية</h4>
+          <ul class="footer-links-list">
+            <li><a href="#general-construction"><i class="fas fa-angle-left"></i> الإنشاءات العامة</a></li>
+            <li><a href="#villas"><i class="fas fa-angle-left"></i> بناء الفلل والقصور</a></li>
+            <li><a href="#finishing"><i class="fas fa-angle-left"></i> أعمال التشطيب والديكور</a></li>
+            <li><a href="#renovation"><i class="fas fa-angle-left"></i> الترميم والصيانة الإنشائية</a></li>
+            <li><a href="#management"><i class="fas fa-angle-left"></i> إدارة المشاريع والإشراف</a></li>
+            <li><a href="#mep"><i class="fas fa-angle-left"></i> الأعمال الكهروميكانيكية</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">بيانات التواصل</h4>
+          <div class="footer-contact-info">
+            <div class="footer-contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h5>المقر الرئيسي</h5>
+                <p>المملكة العربية السعودية</p>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fas fa-phone-alt"></i>
+              <div>
+                <h5>الهاتف المباشر</h5>
+                <a href="tel:+966500000000" dir="ltr">+966 50 000 0000</a>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fab fa-whatsapp"></i>
+              <div>
+                <h5>الواتساب المباشر</h5>
+                <a href="javascript:void(0)" onclick="openWhatsApp('السلام عليكم ورحمة الله')" dir="ltr">+966 50 000 0000</a>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h5>البريد الإلكتروني</h5>
+                <a href="mailto:info@ibsaralemaar.com">info@ibsaralemaar.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>جميع الحقوق محفوظة &copy; 2026 شركة إبصار الإعمار للمقاولات.</p>
+        <a class="asserai" target="_blank" href="https://asserai.com/">Developed by asser ai</a> 
+      </div>
+    </div>
+  </footer>
+
+  <!-- زر الواتساب العائم -->
+  <a href="javascript:void(0)" class="whatsapp-float-btn" aria-label="تواصل عبر واتساب">
+    <i class="fab fa-whatsapp"></i>
+    <span class="whatsapp-tooltip">تحدث معنا عبر واتساب</span>
+  </a>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
