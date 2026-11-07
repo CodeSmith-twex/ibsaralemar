@@ -592,4 +592,210 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // ==========================================================================
+  // 12. المعرض التفاعلي وعارض الصور الكبير (Interactive Gallery & Lightbox)
+  // ==========================================================================
+  const galleryMainImg = document.getElementById('galleryMainImage');
+  const galleryPrevBtn = document.getElementById('galleryPrevBtn');
+  const galleryNextBtn = document.getElementById('galleryNextBtn');
+  const galleryThumbs = document.querySelectorAll('.gallery-thumb-item');
+  const galleryCounter = document.getElementById('galleryCounter');
+  const galleryZoomBtn = document.getElementById('galleryZoomBtn');
+  const galleryViewport = document.getElementById('galleryViewport');
+
+  // عناصر عارض الصور الكبير (Lightbox)
+  const lightboxModal = document.getElementById('projectLightboxModal');
+  const lightboxBackdrop = document.getElementById('lightboxBackdrop');
+  const lightboxCloseBtn = document.getElementById('lightboxCloseBtn');
+  const lightboxPrevBtn = document.getElementById('lightboxPrevBtn');
+  const lightboxNextBtn = document.getElementById('lightboxNextBtn');
+  const lightboxImg = document.getElementById('lightboxImg');
+  const lightboxCaption = document.getElementById('lightboxCaption');
+  const lightboxCounter = document.getElementById('lightboxCounter');
+
+  let currentGalleryIndex = 0;
+  let galleryImages = [];
+
+  // جمع الصور من المعرض
+  if (galleryThumbs.length > 0) {
+    galleryThumbs.forEach((thumb, idx) => {
+      const src = thumb.getAttribute('data-full-img') || thumb.querySelector('img')?.src;
+      const title = thumb.getAttribute('data-title') || thumb.querySelector('img')?.alt || `صورة ${idx + 1}`;
+      galleryImages.push({ src, title });
+    });
+  } else if (galleryMainImg) {
+    galleryImages.push({ src: galleryMainImg.src, title: galleryMainImg.alt || 'صورة المشروع' });
+  }
+
+  function updateGallery(index) {
+    if (!galleryMainImg || galleryImages.length === 0) return;
+    if (index < 0) index = galleryImages.length - 1;
+    if (index >= galleryImages.length) index = 0;
+    currentGalleryIndex = index;
+
+    galleryMainImg.style.opacity = '0.35';
+    setTimeout(() => {
+      galleryMainImg.src = galleryImages[currentGalleryIndex].src;
+      galleryMainImg.alt = galleryImages[currentGalleryIndex].title;
+      galleryMainImg.setAttribute('data-index', currentGalleryIndex);
+      galleryMainImg.style.opacity = '1';
+    }, 140);
+
+    galleryThumbs.forEach((t, i) => {
+      t.classList.toggle('active', i === currentGalleryIndex);
+    });
+
+    if (galleryCounter) {
+      galleryCounter.textContent = `${currentGalleryIndex + 1} / ${galleryImages.length}`;
+    }
+  }
+
+  // أزرار التنقل بالمعرض التفاعلي
+  galleryPrevBtn?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    updateGallery(currentGalleryIndex - 1);
+  });
+
+  galleryNextBtn?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    updateGallery(currentGalleryIndex + 1);
+  });
+
+  // النقر على الصور المصغرة
+  galleryThumbs.forEach((thumb, idx) => {
+    thumb.addEventListener('click', () => {
+      updateGallery(idx);
+    });
+  });
+
+  // دعم السحب باللمس على الهواتف للمعرض
+  if (galleryViewport) {
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    galleryViewport.addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+
+    galleryViewport.addEventListener('touchend', (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      const diff = touchEndX - touchStartX;
+      if (Math.abs(diff) > 40) {
+        if (diff > 0) {
+          updateGallery(currentGalleryIndex - 1);
+        } else {
+          updateGallery(currentGalleryIndex + 1);
+        }
+      }
+    }, { passive: true });
+  }
+
+  // تفاعلات عارض الصور الكبير (Lightbox)
+  window.openLightbox = function(index) {
+    if (!lightboxModal || galleryImages.length === 0) return;
+    if (index === undefined || index < 0 || index >= galleryImages.length) {
+      index = currentGalleryIndex;
+    }
+    currentGalleryIndex = index;
+
+    updateLightboxImage();
+    lightboxModal.classList.add('active');
+    lightboxModal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  };
+
+  window.closeLightbox = function() {
+    if (!lightboxModal) return;
+    lightboxModal.classList.remove('active');
+    lightboxModal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  };
+
+  function updateLightboxImage() {
+    if (!lightboxImg || galleryImages.length === 0) return;
+    const current = galleryImages[currentGalleryIndex];
+    lightboxImg.style.opacity = '0.3';
+    setTimeout(() => {
+      lightboxImg.src = current.src;
+      lightboxImg.alt = current.title;
+      lightboxImg.style.opacity = '1';
+    }, 120);
+
+    if (lightboxCaption) {
+      lightboxCaption.textContent = current.title;
+    }
+    if (lightboxCounter) {
+      lightboxCounter.textContent = `${currentGalleryIndex + 1} / ${galleryImages.length}`;
+    }
+  }
+
+  function lightboxNext() {
+    currentGalleryIndex = (currentGalleryIndex + 1) % galleryImages.length;
+    updateLightboxImage();
+    updateGallery(currentGalleryIndex);
+  }
+
+  function lightboxPrev() {
+    currentGalleryIndex = (currentGalleryIndex - 1 + galleryImages.length) % galleryImages.length;
+    updateLightboxImage();
+    updateGallery(currentGalleryIndex);
+  }
+
+  galleryZoomBtn?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    window.openLightbox(currentGalleryIndex);
+  });
+
+  galleryMainImg?.addEventListener('click', () => {
+    window.openLightbox(currentGalleryIndex);
+  });
+
+  lightboxCloseBtn?.addEventListener('click', window.closeLightbox);
+  lightboxBackdrop?.addEventListener('click', window.closeLightbox);
+  lightboxPrevBtn?.addEventListener('click', lightboxPrev);
+  lightboxNextBtn?.addEventListener('click', lightboxNext);
+
+  // إتاحة فتح الصورة من مراحل المشروع
+  window.openLightboxFromStage = function(stageIndex) {
+    if (typeof stageIndex === 'number' && stageIndex >= 0 && stageIndex < galleryImages.length) {
+      window.openLightbox(stageIndex);
+    } else {
+      window.openLightbox(0);
+    }
+  };
+
+  // دعم لوحة المفاتيح للايت بوكس (Escape, الأسهم)
+  document.addEventListener('keydown', (e) => {
+    if (!lightboxModal?.classList.contains('active')) return;
+    if (e.key === 'Escape') {
+      window.closeLightbox();
+    } else if (e.key === 'ArrowRight') {
+      lightboxPrev();
+    } else if (e.key === 'ArrowLeft') {
+      lightboxNext();
+    }
+  });
+
+  // دعم السحب باللمس داخل اللايت بوكس للجوال
+  if (lightboxModal) {
+    let lbTouchStartX = 0;
+    let lbTouchEndX = 0;
+
+    lightboxModal.addEventListener('touchstart', (e) => {
+      lbTouchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+
+    lightboxModal.addEventListener('touchend', (e) => {
+      lbTouchEndX = e.changedTouches[0].screenX;
+      const diff = lbTouchEndX - lbTouchStartX;
+      if (Math.abs(diff) > 40) {
+        if (diff > 0) {
+          lightboxPrev();
+        } else {
+          lightboxNext();
+        }
+      }
+    }, { passive: true });
+  }
+
 });
